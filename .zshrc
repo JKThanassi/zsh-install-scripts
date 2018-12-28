@@ -63,6 +63,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(dirname $(gem which colorls))/tab_complete.sh
+# alias ls='colorls'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

@@ -1,5 +1,5 @@
 #!/bin/sh
-echo This script will install zsh, oh-my-zsh, and some zsh plugins that I use.
+echo "This script will install zsh, oh-my-zsh, and some zsh plugins that I use."
 
 if test ! $(which brew); then
     echo "Installing homebrew..."
@@ -7,12 +7,12 @@ if test ! $(which brew); then
 fi
 
 brew install zsh 
-echo now changing shell to zsh
-chsh -s $(which zsh)
+echo "now changing shell to zsh"
+sudo chsh -s $(which zsh)
 
-echo installing oh my zsh
+echo "installing oh my zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-echo installing powerline fonts
+echo "installing powerline fonts"
 # clone
 env -i git clone https://github.com/powerline/fonts.git --depth=1
 # install
