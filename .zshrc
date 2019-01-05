@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/joseph/.oh-my-zsh
+export ZSH=/Users/joekt/.oh-my-zsh
 
 #adding conda path
 export PATH=/anaconda3/bin:$PATH
@@ -63,9 +63,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(dirname $(gem which colorls))/tab_complete.sh
-# alias ls='colorls'
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
